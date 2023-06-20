@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Doctor</title>
+</head>
+<body>
+	<form action="/doctor" method="post">
+	
+	Name <input type = "text" name="name"><br>
+	
+	<p>EmailId <input type = "email" name ="emailid"></p><br>
+	
+	Specialization <select name="specialization">
+	<option value="">--Select--</option>
+	<option value="mbbs">MBBS</option>
+	<option value="md">MD</option>
+	<option value="phd">PHD</option>
+	</select><br>
+	
+	<p>Address <input type="text" name="address"><br></p>
+	
+	<p>Mobile <input type="tel" name="mobile"></p><br>
+	
+	Gender <input  type="radio" name="gender" id="male" value="Male">
+	<label for="Male">Male</label>
+	<input  type="radio" name="gender" id="female" value="Female">
+	<label for="Female">Female</label><br>
+	
+	<p>Note<input type="text" name="note"></p><br>
+	
+	Photo<input type="file" name="photo"><br>
+	
+	<p><input type="submit" value="Create"></p>
+	
+	</form>
+</body>
+</html>
